@@ -6,9 +6,11 @@ import PanelMenu from "./PanelMenu";
 export default function Panel({
   title = "Sample",
   avatar = null,
+  description = "",
 }: {
   title: string;
   avatar: JSX.Element | ReactNode | null;
+  description: JSX.Element | ReactNode | string;
 }) {
   const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null);
 
@@ -24,7 +26,7 @@ export default function Panel({
   return (
     <>
       <Popover open={open} anchorEl={anchorEl} onClose={handleClose}>
-        <PanelMenu />
+        <PanelMenu title={title} description={description} />
       </Popover>
       <Card sx={{ width: "100%", height: "100%", minHeight: 250 }}>
         <CardHeader
