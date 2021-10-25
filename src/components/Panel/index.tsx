@@ -1,7 +1,15 @@
 import { ReactNode, MouseEvent, useState } from "react";
-import { Card, CardHeader, IconButton, Popover } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  Grid,
+  IconButton,
+  Popover,
+} from "@mui/material";
 import { MoreVert } from "@mui/icons-material";
 import PanelMenu from "./PanelMenu";
+import PanelItem from "./PanelItem";
 
 export default function Panel({
   title = "Sample",
@@ -38,6 +46,13 @@ export default function Panel({
           }
           title={`${title}`}
         />
+        <CardContent>
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={12}>
+              <PanelItem title="item A" />
+            </Grid>
+          </Grid>
+        </CardContent>
       </Card>
     </>
   );
