@@ -43,47 +43,81 @@ const Home: NextPage = () => {
           }}
         >
           <Grid container spacing={1}>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={1} />
+            <Grid item xs={12} md={2}>
               <Panel
                 title={"Key Partners"}
                 avatar={<ConnectWithoutContact />}
+                description={"Key Partners hints goes here."}
               />
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={2}>
               <Grid container spacing={1} direction={"column"}>
                 <Grid item xs={12} md={6}>
-                  <Panel title={"Key Activities"} avatar={<CheckBox />} />
+                  <Panel
+                    title={"Key Activities"}
+                    avatar={<CheckBox />}
+                    description={"Key Activities hints goes here."}
+                  />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <Panel title={"Key Resources"} avatar={<AllInbox />} />
+                  <Panel
+                    title={"Key Resources"}
+                    avatar={<AllInbox />}
+                    description={"Key Resources hints goes here."}
+                  />
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={3}>
-              <Panel title={"Value Proposition"} avatar={<CardGiftcard />} />
+            <Grid item xs={12} md={2}>
+              <Panel
+                title={"Value Proposition"}
+                avatar={<CardGiftcard />}
+                description={"Value Proposition hints goes here."}
+              />
             </Grid>
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={2}>
               <Grid container spacing={1} direction={"column"}>
                 <Grid item xs={12} md={6}>
                   <Panel
                     title={"Customer Relationships"}
                     avatar={<Favorite />}
+                    description={"Customer Relationships hints goes here."}
                   />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <Panel title={"Channels"} avatar={<AccountTree />} />
+                  <Panel
+                    title={"Channels"}
+                    avatar={<AccountTree />}
+                    description={"Channels hints goes here."}
+                  />
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item xs={12} md={12}>
-              <Panel title={"Customer Segments"} avatar={<Group />} />
+            <Grid item xs={12} md={2}>
+              <Panel
+                title={"Customer Segments"}
+                avatar={<Group />}
+                description={"Customer Segments hints goes here."}
+              />
             </Grid>
-            <Grid item xs={12} md={6}>
-              <Panel title={"Cost Structure"} avatar={<AttachMoney />} />
+            <Grid item xs={12} md={1} />
+            <Grid item xs={12} md={1} />
+            <Grid item xs={12} md={5}>
+              <Panel
+                title={"Cost Structure"}
+                avatar={<AttachMoney />}
+                description={"Cost Structure hints goes here."}
+              />
             </Grid>
-            <Grid item xs={12} md={6}>
-              <Panel title={"Revanue Streams"} avatar={<Insights />} />
+            <Grid item xs={12} md={5}>
+              <Panel
+                title={"Revanue Streams"}
+                avatar={<Insights />}
+                description={"Revanue Streams hints goes here."}
+              />
             </Grid>
+            <Grid item xs={12} md={1} />
             <Grid item xs={12} md={12}>
               <Typography
                 color="GrayText"
